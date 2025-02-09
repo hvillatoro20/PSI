@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plus Salud Integral</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Plus Salud Integral</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#evaluacion">Evaluación</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="section">
+        <div class="container">
+            <h2>Bienvenido a Plus Salud Integral</h2>
+            <p>En <strong>Plus Salud Integral</strong>, nos dedicamos a ayudar a personas que enfrentan la depresión. Ofrecemos acompañamiento profesional y evaluaciones personalizadas para entender mejor tu situación y brindarte el apoyo que necesitas.</p>
+        </div>
+    </section>
+
+    <!-- Sección Evaluación -->
+    <section id="evaluacion" class="section">
+        <div class="container">
+            <h2>Evaluación de Depresión</h2>
+            <p>Responde las siguientes preguntas con sinceridad. Este test te ayudará a entender mejor cómo te sientes.</p>
+            <form id="form-depresion">
+                <!-- Preguntas del 1 al 20 -->
+                <div class="pregunta">
+                    <p>1. ¿Te sientes triste o vacío la mayor parte del tiempo?</p>
+                    <label><input type="radio" name="p1" value="0"> Nunca</label>
+                    <label><input type="radio" name="p1" value="1"> A veces</label>
+                    <label><input type="radio" name="p1" value="2"> Casi siempre</label>
+                </div>
+                <!-- Repetir para las 20 preguntas -->
+                <div class="pregunta">
+                    <p>20. ¿Has tenido pensamientos de autolesión o suicidio?</p>
+                    <label><input type="radio" name="p20" value="0"> Nunca</label>
+                    <label><input type="radio" name="p20" value="1"> A veces</label>
+                    <label><input type="radio" name="p20" value="2"> Casi siempre</label>
+                </div>
+                <button type="button" onclick="evaluarDepresion()">Evaluar</button>
+            </form>
+            <div id="resultado">
+                <h3>Resultado:</h3>
+                <p id="texto-resultado"></p>
+                <p id="recomendacion"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form id="form-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="redes-sociales">
+                <a href="https://wa.me/50487655578" target="_blank">WhatsApp</a>
+                <a href="https://www.instagram.com/plussaludhn" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/plussaludhn" target="_blank">Facebook</a>
+                <a href="mailto:plusalud.info@gmail.com">Correo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Ubicación -->
+    <section id="ubicacion" class="section">
+        <div class="container">
+            <h2>Ubicación</h2>
+            <p>Col. Las Minitas, Edificio Millenium II, Tegucigalpa</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.566041359868!2d-87.206349685718!3d13.74620990125193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQ0JzQ2LjQiTiA4N8KwMTInMTcuNyJX!5e0!3m2!1ses!2shn!4v1623456789012!5m2!1ses!2shn" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Plus Salud Integral. Todos los derechos reservados.</p>
+            <p>Contacto: plusalud.info@gmail.com | Tel: +504-87655578</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
